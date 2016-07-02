@@ -1,0 +1,10 @@
+#rectangle
+{
+    position: absolute;
+    left: 6px;
+    width: 77px;
+    top: 35px;
+    height: 68px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+}
