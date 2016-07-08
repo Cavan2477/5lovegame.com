@@ -9,23 +9,29 @@ router.get('/', function(req, res, next) {
 
 module.exports = router;*/
 
-var data_title = 
-{
-  title: '5lovegames',
+var data_title = {
+  title: '我爱游戏',
 };
 
-// 首页
-var func_home_page = function(req, res)
-{
-	console.log('func_home_page');
-
+// Index.jade
+var funcShowIndex = function(req, res){
+	console.log('funcShowIndex');
 	res.render('pages/index', data_title);
 };
 
+// Header.jade
+var funcShowHeader = function(req, res){
+	console.log('funcShowHeader');
+	res.render('pages/header', data_title);
+};
+
 // 路由规则
-module.exports = function(app)
-{
-  // 首页
-  app.get('/', func_home_page);
+module.exports = function(app){
+  // index.jade
+  app.get('/', funcShowIndex);
+  app.get('/index', funcShowIndex);
+
+  // header.jade
+  app.get('/header', funcShowHeader);
 };
 
