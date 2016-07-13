@@ -2,6 +2,36 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+
+    //- ----------------------CSS----------------------
+    //- Custom CSS
+    link(type='text/css', rel='stylesheet', href='/stylesheets/main.css')
+
+    //- Bootstrap Core CSS
+    link(type='text/css', rel='stylesheet', href='/stylesheets/plugins/bootstrap.min.css')
+
+    //- MetisMenu CSS
+    link(type='text/css', rel='stylesheet', href='/stylesheets/plugins/metisMenu.min.css')
+
+    //- Timeline CSS
+    link(type='text/css', rel='stylesheet', href='/stylesheets/plugins/timeline.css')
+
+    //- Morris Charts CSS
+    //- link(type='text/css', rel='stylesheet', href='/stylesheets/plugins/morris.min.css')
+
+    //- Custom Fonts
+    link(type='text/css', rel='stylesheet', href='/stylesheets/plugins/font-awesome.min.css')
+
+    //- ----------------------JavaScript----------------------
+    script(type="text/javascript", src="/javascripts/plugins/jquery.min.js")
+    script(type="text/javascript", src="/javascripts/plugins/bootstrap.min.js")
+    script(type="text/javascript", src="/javascripts/plugins/metisMenu.min.js")
+    script(type='text/javascript', src='/javascripts/plugins/custom_theme.js')
   body
     block content

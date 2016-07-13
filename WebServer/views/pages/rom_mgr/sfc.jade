@@ -1,0 +1,83 @@
+include ../navigation
+
+block content
+#page-wrapper
+  .row
+    .col-lg-12
+      h1.page-header SFC Rom管理
+    // /.col-lg-12
+  // /.row
+  .row
+    .col-lg-12
+      .panel.panel-default
+        .panel-body
+          h3 Grid options
+          p
+            | See how aspects of the Bootstrap grid system work across multiple devices with a handy table.
+          .table-responsive
+            table.table.table-bordered.table-striped
+              thead
+                tr
+                  th
+                  th
+                    | Extra small devices
+                    small Phones (<768px)
+                  th
+                    | Small devices
+                    small Tablets (≥768px)
+                  th
+                    | Medium devices
+                    small Desktops (≥992px)
+                  th
+                    | Large devices
+                    small Desktops (≥1200px)
+              tbody
+                tr
+                  th Grid behavior
+                  td Horizontal at all times
+                  td(colspan='3') Collapsed to start, horizontal above breakpoints
+                tr
+                  th Max container width
+                  td None (auto)
+                  td 750px
+                  td 970px
+                  td 1170px
+                tr
+                  th Class prefix
+                  td
+                    code .col-xs-
+                  td
+                    code .col-sm-
+                  td
+                    code .col-md-
+                  td
+                    code .col-lg-
+                tr
+                  th # of columns
+                  td(colspan='4') 12
+                tr
+                  th Max column width
+                  td.text-muted Auto
+                  td 60px
+                  td 78px
+                  td 95px
+                tr
+                  th Gutter width
+                  td(colspan='4') 30px (15px on each side of a column)
+                tr
+                  th Nestable
+                  td(colspan='4') Yes
+                tr
+                  th Offsets
+                  td(colspan='4') Yes
+                tr
+                  th Column ordering
+                  td(colspan='4') Yes
+          p
+            | Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, applying any
+            code .col-md-
+            |  class to an element will not only affect its styling on medium devices but also on large devices if a
+            code .col-lg-
+            |  class is not present.
+    // /.col-lg-12
+  // /.row
